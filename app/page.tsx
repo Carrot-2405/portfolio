@@ -48,15 +48,15 @@ const RobotText = () => {
     <div className="relative flex items-center justify-center mb-8">
       {/* Speech Bubble */}
       <motion.div
-        className="relative bg-white rounded-2xl p-4 shadow-lg mr-4"
+        className="relative bg-gray-800 rounded-2xl p-4 shadow-lg mr-4"
         initial={{ scale: 0.8, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.3 }}
       >
-        <div className="text-xl font-medium bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent min-w-[200px] text-center">
+        <div className="text-xl font-medium bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent min-w-[200px] text-center">
           {currentText}
           <motion.span
-            className="inline-block w-1 h-5 bg-blue-600 ml-1"
+            className="inline-block w-1 h-5 bg-blue-400 ml-1"
             animate={{
               opacity: [1, 0],
             }}
@@ -68,7 +68,7 @@ const RobotText = () => {
           />
         </div>
         {/* Speech bubble tail */}
-        <div className="absolute -right-3 top-1/2 -translate-y-1/2 w-0 h-0 border-t-[10px] border-t-transparent border-l-[15px] border-l-white border-b-[10px] border-b-transparent" />
+        <div className="absolute -right-3 top-1/2 -translate-y-1/2 w-0 h-0 border-t-[10px] border-t-transparent border-l-[15px] border-l-gray-800 border-b-[10px] border-b-transparent" />
       </motion.div>
 
       {/* Robot */}
@@ -85,7 +85,7 @@ const RobotText = () => {
       >
         {/* Robot head */}
         <motion.div
-          className="absolute w-20 h-20 bg-gray-800 rounded-xl"
+          className="absolute w-20 h-20 bg-gray-700 rounded-xl"
           animate={{
             rotate: isDeleting ? [-2, 2, -2] : 0,
           }}
@@ -111,7 +111,7 @@ const RobotText = () => {
         </motion.div>
         {/* Antenna */}
         <motion.div
-          className="absolute -top-4 left-1/2 -translate-x-1/2 w-1 h-4 bg-gray-800"
+          className="absolute -top-4 left-1/2 -translate-x-1/2 w-1 h-4 bg-gray-700"
           animate={{
             rotate: [0, 5, 0, -5, 0],
           }}
@@ -165,7 +165,7 @@ export default function Home() {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
               href="mailto:your.email@example.com"
-              className="text-gray-600 hover:text-blue-600 transition-colors"
+              className="text-gray-300 hover:text-blue-400 transition-colors"
             >
               <Mail className="h-6 w-6" />
             </motion.a>
@@ -175,7 +175,7 @@ export default function Home() {
               href="https://github.com/yourusername"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 hover:text-blue-600 transition-colors"
+              className="text-gray-300 hover:text-blue-400 transition-colors"
             >
               <Github className="h-6 w-6" />
             </motion.a>
@@ -185,7 +185,7 @@ export default function Home() {
               href="https://linkedin.com/in/yourusername"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 hover:text-blue-600 transition-colors"
+              className="text-gray-300 hover:text-blue-400 transition-colors"
             >
               <Linkedin className="h-6 w-6" />
             </motion.a>
