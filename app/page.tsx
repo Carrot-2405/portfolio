@@ -147,9 +147,11 @@ export default function Home() {
               initial={{ scale: 0.5, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-5xl sm:text-6xl md:text-7xl font-bold text-white mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600"
+              className="text-5xl sm:text-6xl md:text-7xl font-bold text-white mb-6"
             >
-              Jay Takle
+              <span className="animate-gradient bg-gradient-to-r from-blue-400 via-purple-400 to-blue-400 bg-[length:200%_auto] bg-clip-text text-transparent">
+                Jay Takle
+              </span>
             </motion.h1>
           </div>
           <p className="text-xl text-gray-300 mb-8">
