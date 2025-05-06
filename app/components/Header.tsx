@@ -34,7 +34,7 @@ const Header = () => {
       transition={{ duration: 0.5 }}
       className={`fixed w-full z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-white/80 backdrop-blur-md shadow-lg'
+          ? 'bg-gray-900/80 backdrop-blur-md shadow-lg'
           : 'bg-transparent'
       }`}
     >
@@ -62,7 +62,7 @@ const Header = () => {
                 >
                   <Link
                     href={item.href}
-                    className="text-gray-700 hover:text-blue-600 transition-colors"
+                    className="text-gray-300 hover:text-blue-400 transition-colors"
                   >
                     {item.label}
                   </Link>
@@ -79,7 +79,7 @@ const Header = () => {
           >
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-700 hover:text-blue-600 transition-colors"
+              className="text-gray-300 hover:text-blue-400 transition-colors"
             >
               {isMenuOpen ? (
                 <X className="h-6 w-6" />
@@ -110,7 +110,7 @@ const Header = () => {
                   >
                     <Link
                       href={item.href}
-                      className="block px-3 py-2 text-gray-700 hover:text-blue-600 transition-colors"
+                      className="block px-3 py-2 text-gray-300 hover:text-blue-400 transition-colors"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       {item.label}
